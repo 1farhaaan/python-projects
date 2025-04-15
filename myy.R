@@ -1,6 +1,6 @@
 getwd()
 setwd("C:/Users/crewt/Desktop/college/JALLOSH/OneDrive/Documents/datasets")
-# Pract 1
+# Pract 1 ---------------------------------------------------------------------------------------------------------------------------------------------------
 x <- read.csv("ToyotaCorolla.csv")
 View(x)
 
@@ -30,7 +30,7 @@ library(fastDummies)
 data_dummy <- dummy_cols(x, select_columns = c("fuel_type", "met_color"), remove_selected_columns = TRUE)
 View(data_dummy)
 
-# Pract 2
+# Pract 2 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -97,7 +97,7 @@ plotly::ggplotly(
     theme_minimal()
 )
 
-# Pract 3
+# Pract 3 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 library(readxl)
 
 # Load data (assume it's in the first sheet)
@@ -145,7 +145,7 @@ subset_data <- toyota[, c("Price", "Age_08_04", "KM", "HP", "Weight")]
 # Matrix plot
 ggpairs(subset_data)
 
-# pract 9
+# pract 9 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 library(tseries)
 library(forecast)
 library(ggplot2)
